@@ -1,0 +1,108 @@
+
+### 1. **General System Configuration Files**
+
+- **/etc/fstab** - Information about disk partitions and their mount points.
+- **/etc/hostname** - System's hostname.
+- **/etc/hosts** - Local hostname-to-IP address mapping.
+- **/etc/profile** - System-wide shell environment settings for login shells.
+- **/etc/bashrc** - System-wide bash settings for non-login shells.
+- **/etc/environment** - System environment variable definitions.
+- **/etc/motd** - Message of the day displayed at login.
+
+### 2. **Networking Configuration Files**
+
+- **/etc/sysconfig/network** - Network configuration settings.
+- **/etc/sysconfig/network-scripts/ifcfg-* ** - Network interface configurations.
+- **/etc/hostname** - Hostname configuration file.
+- **/etc/hosts.allow** - Control access to services using TCP Wrappers.
+- **/etc/hosts.deny** - Block access to services using TCP Wrappers.
+- **/etc/iptables/rules.v4** - IPv4 firewall rules using iptables.
+- **/etc/sysctl.conf** - Kernel parameter settings.
+
+### 3. **User and Permission Configuration Files**
+
+- **/etc/passwd** - Information about system users.
+- **/etc/group** - Information about groups.
+- **/etc/shadow** - Encrypted password information for users.
+- **/etc/sudoers** - Configuration for sudo privileges.
+- **/etc/login.defs** - Configuration for user account settings.
+- **/etc/security/limits.conf** - System resource limits for users.
+- **/etc/selinux/config** - SELinux configuration for security policies.
+
+### 4. **System Services and Daemons**
+
+- **/etc/systemd/system/** - Systemd unit configuration files.
+- **/etc/systemd/system.conf** - Global systemd configuration.
+- **/etc/systemd/user.conf** - User-specific systemd configuration.
+- **/etc/init.d/** - SysV-style service scripts (legacy).
+- **/etc/sysconfig/** - Configuration for system services.
+- **/etc/cron.d/** - Cron job configuration files.
+
+### 5. **Package Management Configuration Files**
+
+- **/etc/dnf/dnf.conf** - DNF package manager configuration.
+- **/etc/yum.conf** - YUM package manager configuration (older).
+- **/etc/yum.repos.d/** - Repository configuration files for YUM/DNF.
+
+### 6. **Hardware and Device Configuration Files**
+
+- **/etc/mkinitrd/** - Kernel initialization files.
+- **/etc/udev/rules.d/** - Udev device naming and configuration rules.
+- **/etc/modprobe.d/** - Module loading configurations.
+- **/sys/class/net/** - Network interface information directory.
+
+### 7. **Time and Locale Configuration Files**
+
+- **/etc/localtime** - Symlink to the time zone file.
+- **/etc/chrony.conf** - Configuration for Chrony NTP (Network Time Protocol).
+- **/etc/timezone** - Time zone settings.
+- **/etc/profile.d/** - Directory for additional environment settings.
+
+### 8. **Logging Configuration Files**
+
+- **/etc/rsyslog.conf** - Main configuration file for rsyslog (system logging).
+- **/etc/logrotate.conf** - Log rotation configuration.
+- **/etc/logrotate.d/** - Log rotation configuration for individual logs.
+- **/var/log/** - Directory containing system logs (e.g., /var/log/messages).
+
+### 9. **Debugging and Performance Monitoring Files**
+
+- **/etc/sysctl.conf** - Kernel parameters, useful for debugging network and system performance.
+- **/etc/dmesg** - Kernel ring buffer; stores boot logs and system logs.
+- **/var/log/dmesg** - Dmesg logs with kernel and hardware-related messages.
+- **/etc/collectd/collectd.conf** - Configuration for Collectd, a system statistics collection daemon.
+- **/etc/rsnapshot.conf** - Configuration for incremental backups and snapshot management.
+- **/etc/netdata/netdata.conf** - Netdata configuration for real-time system monitoring.
+- **/etc/strace.conf** - Configuration for strace, a diagnostic tool for system call tracing.
+- **/etc/sssd/sssd.conf** - Configuration file for the SSSD (System Security Services Daemon), useful for debugging authentication and identity issues.
+
+### 10. **Web Server and Application Configuration Files**
+
+- **/etc/httpd/httpd.conf** - Main configuration file for Apache HTTP server.
+- **/etc/nginx/nginx.conf** - Configuration for the Nginx web server.
+- **/etc/php.ini** - PHP configuration file.
+- **/etc/postgresql/postgresql.conf** - Configuration for PostgreSQL database server.
+
+### 11. **Backup and Recovery Configuration Files**
+
+- **/etc/rsnapshot.conf** - Configuration for rsnapshot incremental backups.
+- **/etc/duplicity.conf** - Configuration for encrypted backups using Duplicity.
+
+### 12. **Virtualization and Containerization Configuration Files**
+
+- **/etc/libvirt/qemu.conf** - Configuration for QEMU-based virtual machines using libvirt.
+- **/etc/docker/daemon.json** - Docker daemon configuration file.
+- **/etc/kubernetes/kubelet.conf** - Kubernetes node configuration.
+- **/etc/ansible/ansible.cfg** - Configuration for Ansible automation.
+
+### 13. **Miscellaneous Useful Configurations**
+
+- **/etc/cron.d/** - Cron job configurations for system-wide jobs.
+- **/etc/crontab** - System-wide cron job file.
+- **/etc/tmpfiles.d/** - Temporary file cleanup configuration.
+- **/etc/redis.conf** - Configuration file for the Redis database server.
+- **/etc/smartd.conf** - Configuration for monitoring hard drive health using SMART.
+- **/etc/docker/daemon.json** - Configuration for Docker containers.
+- **/etc/ssh/ssh_config** - SSH client configuration file.
+
+
