@@ -105,4 +105,11 @@
 - **/etc/docker/daemon.json** - Configuration for Docker containers.
 - **/etc/ssh/ssh_config** - SSH client configuration file.
 
+### 14. **Podman containers files**
+- **/var/lib/containers/storage/** - Podman stores its images and containers in the following directory: .
+- **/var/lib/containers/storage/overlay/** - The actual image layers are stored under .
+- **/var/lib/containers/storage/containers/** - Container data is stored in a separate sub-directory inside .
+- **/var/lib/containers/storage/volumes/** - Volumes created by Podman are stored under .
+- **/var/lib/containers/storage/libpod/** - Configuration and metadata related to images, containers, and volumes are stored under
+- **
 
